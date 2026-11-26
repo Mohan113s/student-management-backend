@@ -10,7 +10,10 @@ import com.studentmanagement.entity.StudentEntity;
 
 @RestController
 @RequestMapping("/api/students")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+	    "http://localhost:5173",
+	    "https://mohan113s.github.io"
+	})
 public class StudentController {
 
     private final StudentService studentService;
